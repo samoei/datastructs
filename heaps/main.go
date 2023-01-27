@@ -49,7 +49,6 @@ func (h *MaxHeap) maxHeapifyDown(index int) {
 		} else {
 			childToCompare = rightChildIndex
 		}
-
 		if h.array[index] < h.array[childToCompare] {
 			h.swap(index, childToCompare)
 			index = childToCompare
@@ -58,9 +57,7 @@ func (h *MaxHeap) maxHeapifyDown(index int) {
 		} else {
 			return
 		}
-
 	}
-
 }
 
 func getParentIndex(childIndex int) int {
